@@ -1,0 +1,511 @@
+/* 2372052_Intan Nuraeni_C */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;1,6..12,300&display=swap');
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 20px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Bagian */
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+/* Navigasi */
+nav {
+  z-index: 100;
+  text-align: center;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: #557C55;
+  top: 0;
+}
+
+nav .logo {
+  padding: 10px 0;
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+
+nav .logo img {
+  vertical-align: middle;
+  width: 60px;
+}
+
+nav .menu {
+  float: right;
+  height: 65px;
+  max-width: 600px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav.putih {
+  background-color: #fff;
+  height: 90px;
+}
+
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+
+
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+header video {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  filter: opacity(40%);
+}
+
+header .intro {
+  z-index: 100;
+  color: #1E5128;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+header .intro p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.tombol {
+  background-color: #fa7070;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 50%;
+  z-index: -1;
+}
+
+/* tombol navigasi */
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  padding-right: 2%;
+}
+
+/* konten */
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+
+section {
+  padding: 50px 0px 50px 0px;
+}
+
+section h3 {
+  font-size: 30px;
+}
+
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #c86b85;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+
+#aboutus,
+#team{
+  background-color: #557C55;
+  color: #fff;
+}
+
+#aboutus,
+#team,
+#blog {
+  text-align: center;
+}
+
+section .konten-isi p{
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+section.abuabu {
+  background-color: #f5f6f6;
+
+}
+
+div .layar-dalam p{
+  padding: 0 10px;
+}
+
+div .layar-dalam img{
+  width: 40%;
+}
+
+.support,
+.blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.support h6 {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.support img {
+  width: 50px;
+}
+
+.support div{
+  text-align: center;
+  width: 26%;
+}
+
+section.space{
+  margin-top: 90px;
+  text-align: center;
+}
+
+.ringkasan{
+  font-style: italic;
+  font-size: 15px;
+  padding: 0 25%;
+}
+
+div#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 20px 60px;
+}
+
+div#gallery div img {
+  height: 500px;
+  border-radius: 10px;
+}
+
+div#gallery .img2 img {
+  height: 550px;
+  border-radius: 10px;
+}
+
+
+section.quote {
+  background: url("asset/background-bromo.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+}
+
+section.quote .layar-dalam p {
+  display: inline;
+  background: url("asset/quote-icon.png") no-repeat;
+  padding: 40px;
+}
+
+section .article{
+  margin-top: 90px;
+}
+
+/* article */
+.blog{
+  margin-top: 50px;
+}
+.blog .area {
+  width: 47%;
+  box-shadow: 0px -10px 30px #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blog div.area div {
+  width: 50%;
+}
+
+.blog .area .gambar {
+  border-radius: 5px 0px 0px 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.blog .area .text article {
+  padding: 40px;
+}
+
+.blog .area .text article h4 {
+  margin: 0px;
+}
+
+.blog .area .text article a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  padding: 50px 0px 50px 0px;
+  background-color: #343a40;
+  color: #fff;
+}
+
+footer .layar-dalam {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .layar-dalam div {
+  width: 20%;
+}
+
+footer .layar-dalam h5 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .layar-dalam .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+
+/* media query */
+@media only screen and (max-width: 1280px){
+  div#gallery div img{
+    height: 450px;
+  }
+
+  div#gallery .img2 img{
+    height: 500px;
+  }
+
+}
+
+@media only screen and (max-width: 1160px){
+  div#gallery div img{
+    height: 350px;
+  }
+
+  div#gallery .img2 img{
+    height: 400px;
+  }
+
+}
+
+
+@media  only screen and (max-width: 994px) {
+  .layar-dalam {
+    width: 90%;
+  }
+
+  /* navigasi */
+  nav .menu ul {
+    display: none;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+  
+  nav .menu ul li a {
+    color: #333;
+  }
+  
+  .tombol-menu {
+    display: flex;
+  }
+
+
+  div .layar-dalam img{
+    width: 20%;
+  }
+  
+  .blog .area {
+    display: block;
+  }
+  /* article */
+  .blog div.area div {
+    width: 100%;
+  }
+  
+  .blog .area .gambar {
+    border-radius: 5px 5px 0px 0px;
+    height: 200px;
+  }
+  
+  .blog .area .text article p {
+    font-size: 12px;
+  }  
+  
+  .support {
+    display: block;
+  }
+  
+  .support div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 970px){
+  div#gallery{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  div#gallery div img{
+    height: 500px;
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+  
+  div#gallery .img2 img{
+    height: 500px;
+    border-radius: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 680px) {
+  div#gallery div img{
+    height: 350px;
+  }
+
+  div#gallery .img2 img{
+    height: 350px;
+  }
+
+}
+
+@media only screen and (max-width: 485px) {
+  header .intro h3{
+    font-size: 25px;
+  }
+  
+  header .intro p{
+    font-size: 17px;
+  }
+
+  div#gallery div img{
+    height: 250px;
+  }
+
+  div#gallery .img2 img{
+    height: 250px;
+  }
+
+  footer .layar-dalam{
+    flex-direction: column;
+    display: block;
+  }
+
+  footer .layar-dalam div{
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  footer .layar-dalam div h5{
+    margin-bottom: 10px;
+  }
+
+}

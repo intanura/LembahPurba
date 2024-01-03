@@ -1,4 +1,3 @@
-// 2372052_Intan Nuraeni_C
 //menu
 var tombolMenu = $('.tombol-menu');
 var menu = $('nav .menu ul');
@@ -30,7 +29,3 @@ $(window).resize(function () {
    }
    klikMenu();
 });
-
-
-
-console.log(screen.width);

@@ -257,7 +257,7 @@ div#gallery {
   padding: 20px 60px;
 }
 
-div#gallery div div img {
+div#gallery div img {
   height: 500px;
   border-radius: 10px;
 }
